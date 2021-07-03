@@ -6,5 +6,6 @@ const depth = 1;
 const geometry = new THREE.BoxGeometry(width, height, depth);
 const material = new THREE.MeshPhongMaterial({ color: 0xb5651d });
 
-export const cube = new THREE.Mesh(geometry, material);
-cube.castShadow = true;
+export const cubeupper = new THREE.Mesh(geometry, material);
+
+cubeupper.position.y=1.5;
