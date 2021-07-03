@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import * as OrbitControls from 'three-orbitcontrols';
 import {cube} from './cube.js';
 import { light } from './hemi_light.js';
 
@@ -11,11 +12,25 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 document.body.appendChild(renderer.domElement);
 
+let suwakvalue = document.getElementById("suwak")
+suwakvalue.addEventListener("input", function() {
+    cube.scale.x=suwakvalue.value;
+    },false);
+
+
 scene.add(cube);
 scene.add(light);
 
 camera.position.z = 8;
 camera.position.y = 1.5;
+
+const controls = new OrbitControls( camera, renderer.domElement );
+
+//controls.update() must be called after any manual changes to the camera's transform
+//camera.position.set( 0, 20, 100 );
+controls.update();
+controls.autoRotate=true;
+
 
 const animate = function () {
     requestAnimationFrame(animate);
