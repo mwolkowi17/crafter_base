@@ -8,4 +8,4 @@ const material = new THREE.MeshPhongMaterial({ color: 0xb5651d });
 
 export const cubeupper = new THREE.Mesh(geometry, material);
 
-cubeupper.position.y=1.5;
+cubeupper.position.y=1;
