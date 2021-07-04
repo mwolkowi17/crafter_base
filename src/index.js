@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import * as OrbitControls from 'three-orbitcontrols';
 import {cube} from './cube.js';
-import { cubeupper } from './cube_upper.js';
+import { cubeupper, cubeuppernext } from './cube_upper.js';
 import { cubeleft, cuberight } from './cube_side.js';
 import { light } from './hemi_light.js';
 
@@ -25,6 +25,7 @@ suwakvalue.addEventListener("input", function() {
 scene.add(cube);
 scene.add(light);
 cube.add(cubeupper);
+//cube.add(cubeuppernext)
 scene.add(cubeleft);
 scene.add(cuberight);
 

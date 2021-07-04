@@ -9,3 +9,7 @@ const material = new THREE.MeshPhongMaterial({ color: 0xb5651d });
 export const cubeupper = new THREE.Mesh(geometry, material);
 
 cubeupper.position.y=1;
+
+export const cubeuppernext = new THREE.Mesh(geometry, material);
+
+cubeuppernext.position.y=2;
