@@ -15,3 +15,13 @@ export const cuberight = new THREE.Mesh(geometry,material)
 
 cuberight.position.x=1;
 cuberight.position.y=0.5;
+
+export const cubeleftnext = new THREE.Mesh(geometry, material);
+
+cubeleftnext.position.x=-1;
+cubeleftnext.position.y=1;
+
+export const cuberightnext = new THREE.Mesh(geometry,material)
+
+cuberightnext.position.x=1;
+cuberightnext.position.y=1;

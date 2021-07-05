@@ -2,8 +2,9 @@ import * as THREE from 'three';
 import * as OrbitControls from 'three-orbitcontrols';
 import {cube} from './cube.js';
 import { cubeupper, cubeuppernext } from './cube_upper.js';
-import { cubeleft, cuberight } from './cube_side.js';
+import { cubeleft, cuberight, cubeleftnext, cuberightnext } from './cube_side.js';
 import { light } from './hemi_light.js';
+import { CubeUVReflectionMapping } from 'three';
 
 
 const scene = new THREE.Scene();
@@ -20,6 +21,18 @@ suwakvalue.addEventListener("input", function() {
     cubeleft.position.x=-suwakvalue.value;
     cuberight.position.x=suwakvalue.value;
     },false);
+
+let suwakvalue2 = document.getElementById("suwak2")
+suwakvalue2.addEventListener("input",function(){
+if(suwakvalue2.value>1){
+    cube.add(cubeuppernext)
+   
+    
+}
+if(suwakvalue2.value<2){
+    cube.remove(cubeuppernext)
+}
+},false)
 
 
 scene.add(cube);
