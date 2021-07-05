@@ -25,3 +25,13 @@ export const cuberightnext = new THREE.Mesh(geometry,material)
 
 cuberightnext.position.x=1;
 cuberightnext.position.y=1.5;
+
+export const cubelefttop = new THREE.Mesh(geometry, material);
+
+cubelefttop.position.x=-1;
+cubelefttop.position.y=2.5;
+
+export const cuberighttop = new THREE.Mesh(geometry,material)
+
+cuberighttop.position.x=1;
+cuberighttop.position.y=2.5;
