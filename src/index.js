@@ -20,17 +20,22 @@ suwakvalue.addEventListener("input", function() {
     cube.scale.x=suwakvalue.value;
     cubeleft.position.x=-suwakvalue.value;
     cuberight.position.x=suwakvalue.value;
+    cubeleftnext.position.x = -suwakvalue.value;
+    cuberightnext.position.x = suwakvalue.value;
     },false);
 
 let suwakvalue2 = document.getElementById("suwak2")
 suwakvalue2.addEventListener("input",function(){
 if(suwakvalue2.value>1){
-    cube.add(cubeuppernext)
-   
+    cube.add(cubeuppernext);
+    scene.add(cubeleftnext);
+    scene.add(cuberightnext);
     
 }
 if(suwakvalue2.value<2){
-    cube.remove(cubeuppernext)
+    cube.remove(cubeuppernext);
+    scene.remove(cubeleftnext);
+    scene.remove(cuberightnext);
 }
 },false)
 
