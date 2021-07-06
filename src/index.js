@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import * as OrbitControls from 'three-orbitcontrols';
 import {cube} from './cube.js';
-import { cubeupper, cubeuppernext } from './cube_upper.js';
+import { cubeupper, cubeuppernext, cubeuppertop } from './cube_upper.js';
 import { cubeleft, cuberight, cubeleftnext, cuberightnext, cubelefttop, cuberighttop } from './cube_side.js';
 import { light } from './hemi_light.js';
 import { CubeUVReflectionMapping } from 'three';
@@ -44,11 +44,13 @@ if(suwakvalue2.value<2){
 if(suwakvalue2.value>2){
     scene.add(cubelefttop);
     scene.add(cuberighttop);
+    cube.add(cubeuppertop);
 }
 
 if(suwakvalue2.value<3){
     scene.remove(cubelefttop);
     scene.remove(cuberighttop);
+    cube.remove(cubeuppertop)
 }
 
 },false)

@@ -13,3 +13,7 @@ cubeupper.position.y=1;
 export const cubeuppernext = new THREE.Mesh(geometry, material);
 
 cubeuppernext.position.y=2;
+
+export const cubeuppertop = new THREE.Mesh(geometry, material)
+
+cubeuppertop.position.y=3;
