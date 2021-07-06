@@ -55,7 +55,7 @@ if(suwakvalue2.value<3){
 
 },false)
 
-
+scene.background = new THREE.Color( 0xE8E8E8 );
 scene.add(cube);
 scene.add(light);
 cube.add(cubeupper);
