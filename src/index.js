@@ -22,11 +22,14 @@ suwakvalue.addEventListener("input", function() {
     cuberight.position.x=suwakvalue.value;
     cubeleftnext.position.x = -suwakvalue.value;
     cuberightnext.position.x = suwakvalue.value;
+    cubelefttop.position.x = -suwakvalue.value;
+    cuberighttop.position.x = suwakvalue.value;
+    
     },false);
 
 let suwakvalue2 = document.getElementById("suwak2")
 suwakvalue2.addEventListener("input",function(){
-if(suwakvalue2.value>1){
+if(suwakvalue2.value>1 && suwakvalue2.value<3){
     cube.add(cubeuppernext);
     scene.add(cubeleftnext);
     scene.add(cuberightnext);
@@ -36,6 +39,16 @@ if(suwakvalue2.value<2){
     cube.remove(cubeuppernext);
     scene.remove(cubeleftnext);
     scene.remove(cuberightnext);
+}
+
+if(suwakvalue2.value>2){
+    scene.add(cubelefttop);
+    scene.add(cuberighttop);
+}
+
+if(suwakvalue2.value<3){
+    scene.remove(cubelefttop);
+    scene.remove(cuberighttop);
 }
 
 },false)
