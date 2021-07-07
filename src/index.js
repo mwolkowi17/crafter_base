@@ -5,6 +5,7 @@ import { cubeupper, cubeuppernext, cubeuppertop } from './cube_upper.js';
 import { cubeleft, cuberight, cubeleftnext, cuberightnext, cubelefttop, cuberighttop } from './cube_side.js';
 import { light } from './hemi_light.js';
 import { CubeUVReflectionMapping } from 'three';
+import { back } from './back.js';
 
 
 const scene = new THREE.Scene();
@@ -62,6 +63,7 @@ cube.add(cubeupper);
 //cube.add(cubeuppernext)
 scene.add(cubeleft);
 scene.add(cuberight);
+cube.add(back);
 
 camera.position.z = 8;
 camera.position.y = 1.5;
