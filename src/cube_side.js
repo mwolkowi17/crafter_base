@@ -4,7 +4,7 @@ const width = 0.2;
 const height = 1.2;
 const depth = 1;
 const geometry = new THREE.BoxGeometry(width, height, depth);
-const material = new THREE.MeshPhongMaterial({ color: 0xb5651d });
+const material = new THREE.MeshPhongMaterial({ color: 0x787878 });
 
 export const cubeleft = new THREE.Mesh(geometry, material);
 

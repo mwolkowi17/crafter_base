@@ -19,6 +19,7 @@ document.body.appendChild(renderer.domElement);
 let suwakvalue = document.getElementById("suwak")
 suwakvalue.addEventListener("input", function() {
     cube.scale.x=suwakvalue.value;
+    back.scale.x=suwakvalue.value*0.925;
     cubeleft.position.x=-suwakvalue.value;
     cuberight.position.x=suwakvalue.value;
     cubeleftnext.position.x = -suwakvalue.value;
