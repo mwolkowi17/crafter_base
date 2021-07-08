@@ -63,7 +63,7 @@ cube.add(cubeupper);
 //cube.add(cubeuppernext)
 scene.add(cubeleft);
 scene.add(cuberight);
-cube.add(back);
+scene.add(back);
 
 camera.position.z = 8;
 camera.position.y = 1.5;
