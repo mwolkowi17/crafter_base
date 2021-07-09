@@ -20,12 +20,12 @@ let suwakvalue = document.getElementById("suwak")
 suwakvalue.addEventListener("input", function() {
     cube.scale.x=suwakvalue.value;
     back.scale.x=suwakvalue.value//*0.925; // do wyregulownia
-    cubeleft.position.x=-suwakvalue.value*0.9;
-    cuberight.position.x=suwakvalue.value*0.9;
-    cubeleftnext.position.x = -suwakvalue.value;
-    cuberightnext.position.x = suwakvalue.value;
-    cubelefttop.position.x = -suwakvalue.value;
-    cuberighttop.position.x = suwakvalue.value;
+    cubeleft.position.x=-suwakvalue.value+0.1;
+    cuberight.position.x=suwakvalue.value-0.1;
+    cubeleftnext.position.x = -suwakvalue.value+0.1;;
+    cuberightnext.position.x = suwakvalue.value-0.1;;
+    cubelefttop.position.x = -suwakvalue.value+0.1;;
+    cuberighttop.position.x = suwakvalue.value-0.1;;
     
     },false);
 
