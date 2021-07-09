@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-const width = 2.2;
+const width = 2;
 const height = 1.2;
 const depth = 0.1;
 const geometry = new THREE.BoxGeometry(width, height, depth);
