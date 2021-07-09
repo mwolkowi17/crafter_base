@@ -9,3 +9,13 @@ export const back  = new THREE.Mesh(geometry, material);
 
 back.position.z=-0.5;
 back.position.y=0.5;
+
+export const backnext = new THREE.Mesh(geometry, material);
+
+backnext.position.z=-0.5;
+backnext.position.y=1.5;
+
+export const backtop = new THREE.Mesh(geometry, material);
+
+backtop.position.z=-0.5;
+backtop.position.y=2.5;

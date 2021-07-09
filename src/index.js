@@ -5,7 +5,7 @@ import { cubeupper, cubeuppernext, cubeuppertop } from './cube_upper.js';
 import { cubeleft, cuberight, cubeleftnext, cuberightnext, cubelefttop, cuberighttop } from './cube_side.js';
 import { light } from './hemi_light.js';
 import { CubeUVReflectionMapping } from 'three';
-import { back } from './back.js';
+import { back, backnext, backtop } from './back.js';
 
 
 const scene = new THREE.Scene();
@@ -35,24 +35,28 @@ if(suwakvalue2.value>1 && suwakvalue2.value<3){
     cube.add(cubeuppernext);
     scene.add(cubeleftnext);
     scene.add(cuberightnext);
+    cube.add(backnext);
     
 }
 if(suwakvalue2.value<2){
     cube.remove(cubeuppernext);
     scene.remove(cubeleftnext);
     scene.remove(cuberightnext);
+    cube.remove(backnext)
 }
 
 if(suwakvalue2.value>2){
     scene.add(cubelefttop);
     scene.add(cuberighttop);
     cube.add(cubeuppertop);
+    cube.add(backtop);
 }
 
 if(suwakvalue2.value<3){
     scene.remove(cubelefttop);
     scene.remove(cuberighttop);
-    cube.remove(cubeuppertop)
+    cube.remove(cubeuppertop);
+    cube.remove(backtop);
 }
 
 },false)
@@ -65,6 +69,7 @@ cube.add(cubeupper);
 scene.add(cubeleft);
 scene.add(cuberight);
 scene.add(back);
+
 
 camera.position.z = 8;
 camera.position.y = 1.5;
