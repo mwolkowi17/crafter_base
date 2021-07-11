@@ -6,7 +6,7 @@ import { cubeleft, cuberight, cubeleftnext, cuberightnext, cubelefttop, cuberigh
 import { light } from './hemi_light.js';
 import { CubeUVReflectionMapping } from 'three';
 import { back, backnext, backtop } from './back.js';
-import { light2 } from './direct_light.js';
+import { light2, light3 } from './direct_light.js';
 
 
 const scene = new THREE.Scene();
@@ -72,6 +72,8 @@ scene.add(cuberight);
 scene.add(back);
 scene.add(light2);
 scene.add(light2.target);
+scene.add(light3);
+scene.add(light3.target);
 
 
 camera.position.z = 8;
