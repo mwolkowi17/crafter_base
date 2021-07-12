@@ -7,6 +7,7 @@ import { light } from './hemi_light.js';
 import { CubeUVReflectionMapping } from 'three';
 import { back, backnext, backtop } from './back.js';
 import { light2, light3, light4 } from './direct_light.js';
+import { compartment1 } from './compartments.js';
 
 
 const scene = new THREE.Scene();
