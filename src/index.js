@@ -28,9 +28,15 @@ suwakvalue.addEventListener("input", function() {
     cuberightnext.position.x = suwakvalue.value-0.1;;
     cubelefttop.position.x = -suwakvalue.value+0.1;;
     cuberighttop.position.x = suwakvalue.value-0.1;;
-    
-    },false);
+    if (suwakvalue.value>4){
+        scene.add(compartment1);
+    }
+    if (suwakvalue.value<4){
+        scene.remove(compartment1);
+    }
 
+    },false);
+    
 let suwakvalue2 = document.getElementById("suwak2")
 suwakvalue2.addEventListener("input",function(){
 if(suwakvalue2.value>1 && suwakvalue2.value<3){
