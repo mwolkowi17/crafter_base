@@ -7,7 +7,7 @@ import { light } from './hemi_light.js';
 import { CubeUVReflectionMapping } from 'three';
 import { back, backnext, backtop } from './back.js';
 import { light2, light3, light4 } from './direct_light.js';
-import { compartment1 } from './compartments.js';
+import { compartment1,compartment3 } from './compartments.js';
 
 
 const scene = new THREE.Scene();
@@ -30,9 +30,11 @@ suwakvalue.addEventListener("input", function() {
     cuberighttop.position.x = suwakvalue.value-0.1;;
     if (suwakvalue.value>4){
         scene.add(compartment1);
+        scene.add(compartment3);
     }
     if (suwakvalue.value<4){
         scene.remove(compartment1);
+        scene.remove(compartment3)
     }
 
     },false);
