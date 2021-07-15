@@ -30,11 +30,11 @@ suwakvalue.addEventListener("input", function() {
     cuberighttop.position.x = suwakvalue.value-0.1;;
     if (suwakvalue.value>4){
         scene.add(compartment1);
-        scene.add(compartment3);
+        //scene.add(compartment3);
     }
     if (suwakvalue.value<4){
         scene.remove(compartment1);
-        scene.remove(compartment3)
+        //scene.remove(compartment3)
     }
 
     },false);
