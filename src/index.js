@@ -67,6 +67,9 @@ if(suwakvalue2.value>2){
     cube.add(cubeuppertop);
     cube.add(backtop);
     compartment3.ison=true;
+    if (suwakvalue.value>4){
+        scene.add(compartment3);
+    }
     console.log(compartment3.ison);
 }
 
