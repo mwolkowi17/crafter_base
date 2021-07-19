@@ -30,10 +30,16 @@ suwakvalue.addEventListener("input", function() {
     cuberighttop.position.x = suwakvalue.value-0.1;;
     if (suwakvalue.value>4){
         scene.add(compartment1);
+        if(compartment3.ison===true){
+            scene.add(compartment3);
+        }
         //scene.add(compartment3);
     }
     if (suwakvalue.value<4){
         scene.remove(compartment1);
+        if(compartment3.ison===true){
+            scene.remove(compartment3);
+        }
         //scene.remove(compartment3)
     }
 
@@ -60,6 +66,8 @@ if(suwakvalue2.value>2){
     scene.add(cuberighttop);
     cube.add(cubeuppertop);
     cube.add(backtop);
+    compartment3.ison=true;
+    console.log(compartment3.ison);
 }
 
 if(suwakvalue2.value<3){
@@ -67,6 +75,8 @@ if(suwakvalue2.value<3){
     scene.remove(cuberighttop);
     cube.remove(cubeuppertop);
     cube.remove(backtop);
+    compartment3.ison=false;
+    console.log(compartment3.ison);
 }
 
 },false)
