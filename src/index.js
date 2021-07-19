@@ -76,6 +76,7 @@ if(suwakvalue2.value<3){
     cube.remove(cubeuppertop);
     cube.remove(backtop);
     compartment3.ison=false;
+    scene.remove(compartment3);
     console.log(compartment3.ison);
 }
 
