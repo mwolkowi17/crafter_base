@@ -9,3 +9,9 @@
     bottom: 25px;
     left: 400px
 }
+
+#stop{
+    position: absolute;
+    bottom: 25px;
+    left: 600px;
+}
