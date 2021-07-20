@@ -85,6 +85,15 @@ if(suwakvalue2.value<3){
 
 },false)
 
+let buttonstop = document.getElementById("stop");
+
+buttonstop.addEventListener("click", function(){
+
+    controls.autoRotate=false;
+    controls.update();
+
+}, false)
+
 scene.background = new THREE.Color( 0xE8E8E8 );
 scene.add(cube);
 //scene.add(light);
