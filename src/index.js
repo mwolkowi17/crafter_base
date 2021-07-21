@@ -94,6 +94,13 @@ buttonstop.addEventListener("click", function(){
 
 }, false)
 
+const buttonstart = document.getElementById("start");
+
+buttonstart.addEventListener("click", function(){
+    controls.autoRotate=true;
+    controls.update();
+}, false)
+
 scene.background = new THREE.Color( 0xE8E8E8 );
 scene.add(cube);
 //scene.add(light);
