@@ -15,3 +15,14 @@ export const compartment3 = new THREE.Mesh(geometry, material);
 compartment3.position.x=0;
 compartment3.position.y=2.5;
 compartment3.ison=false;
+
+export const compartment_middle1 = new THREE.Mesh(geometry, material);
+compartment_middle1.position.x=-2;
+compartment_middle1.position.y=1.5;
+compartment_middle1.ison=false;
+
+
+export const compartment_middle2 = new THREE.Mesh(geometry, material);
+compartment_middle2.position.x=2;
+compartment_middle2.position.y=1.5;
+compartment_middle2.ison=false;
