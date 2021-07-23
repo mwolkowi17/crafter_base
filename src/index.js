@@ -56,6 +56,13 @@ if(suwakvalue2.value>1 && suwakvalue2.value<3){
     scene.add(cubeleftnext);
     scene.add(cuberightnext);
     cube.add(backnext);
+    compartment_middle1.ison=true;
+    if (suwakvalue.value>4){
+        console.log('bow');
+        scene.add(compartment_middle1);
+        scene.add(compartment_middle2);
+        
+    }
     
 }
 if(suwakvalue2.value<2){
@@ -63,7 +70,11 @@ if(suwakvalue2.value<2){
     scene.remove(cubeleftnext);
     scene.remove(cuberightnext);
     cube.remove(backnext)
+    scene.remove(compartment_middle1);
+    scene.remove(compartment_middle2);
 }
+
+
 
 if(suwakvalue2.value>2){
     scene.add(cubelefttop);
@@ -73,8 +84,8 @@ if(suwakvalue2.value>2){
     compartment3.ison=true;
     if (suwakvalue.value>4){
         scene.add(compartment3);
-        scene.add(compartment_middle1);
-        scene.add(compartment_middle2);
+        //scene.add(compartment_middle1);
+        //scene.add(compartment_middle2);
     }
     console.log(compartment3.ison);
 }
