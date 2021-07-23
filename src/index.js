@@ -57,6 +57,7 @@ if(suwakvalue2.value>1 && suwakvalue2.value<3){
     scene.add(cuberightnext);
     cube.add(backnext);
     compartment_middle1.ison=true;
+    compartment_middle2.ison=true;
     if (suwakvalue.value>4){
         console.log('bow');
         scene.add(compartment_middle1);
@@ -97,8 +98,8 @@ if(suwakvalue2.value<3){
     cube.remove(backtop);
     compartment3.ison=false;
     scene.remove(compartment3);
-    scene.remove(compartment_middle1);
-    scene.remove(compartment_middle2);
+    //scene.remove(compartment_middle1);
+    //scene.remove(compartment_middle2);
     console.log(compartment3.ison);
 }
 
