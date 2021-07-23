@@ -35,12 +35,20 @@ suwakvalue.addEventListener("input", function() {
             scene.add(compartment_middle1);
             scene.add(compartment_middle2);
         }
+        if(compartment_middle2.ison===true){
+            scene.add(compartment_middle1);
+            scene.add(compartment_middle2);
+        }
         //scene.add(compartment3);
     }
     if (suwakvalue.value<4){
         scene.remove(compartment1);
         if(compartment3.ison===true){
             scene.remove(compartment3);
+            scene.remove(compartment_middle1);
+            scene.remove(compartment_middle2);
+        }
+        if(compartment_middle2.ison===true){
             scene.remove(compartment_middle1);
             scene.remove(compartment_middle2);
         }
