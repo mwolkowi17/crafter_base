@@ -32,6 +32,8 @@ suwakvalue.addEventListener("input", function() {
         scene.add(compartment1);
         if(compartment3.ison===true){
             scene.add(compartment3);
+            scene.add(compartment_middle1);
+            scene.add(compartment_middle2);
         }
         //scene.add(compartment3);
     }
@@ -39,6 +41,8 @@ suwakvalue.addEventListener("input", function() {
         scene.remove(compartment1);
         if(compartment3.ison===true){
             scene.remove(compartment3);
+            scene.remove(compartment_middle1);
+            scene.remove(compartment_middle2);
         }
         //scene.remove(compartment3)
     }
@@ -69,6 +73,8 @@ if(suwakvalue2.value>2){
     compartment3.ison=true;
     if (suwakvalue.value>4){
         scene.add(compartment3);
+        scene.add(compartment_middle1);
+        scene.add(compartment_middle2);
     }
     console.log(compartment3.ison);
 }
@@ -80,6 +86,8 @@ if(suwakvalue2.value<3){
     cube.remove(backtop);
     compartment3.ison=false;
     scene.remove(compartment3);
+    scene.remove(compartment_middle1);
+    scene.remove(compartment_middle2);
     console.log(compartment3.ison);
 }
 
