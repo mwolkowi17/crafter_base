@@ -81,6 +81,7 @@ if(suwakvalue2.value<2){
     cube.remove(backnext)
     scene.remove(compartment_middle1);
     scene.remove(compartment_middle2);
+    compartment_middle2.ison=false;
 }
 
 
